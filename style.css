@@ -27,7 +27,7 @@ body {
 
 @media screen and (max-width: 900px) {
   body {
-    background-image: url('img/background-jurassic-roca.png'); /* pode ser uma imagem mais simplificada ou com contraste melhor */
+    background-image: url(img/backGroundMobile.png); /* pode ser uma imagem mais simplificada ou com contraste melhor */
     background-size: cover;
     background-position: right;
   }
