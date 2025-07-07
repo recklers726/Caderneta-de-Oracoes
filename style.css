@@ -44,17 +44,17 @@ body {
   background-color: #f8ecc2;
   border: 10px solid #4a2f12;
   border-radius: 30px;
-  padding: 2px;
+  padding: 15px;
   width: 90%;
   max-width: 400px;
-  margin-top: 150px;
+  margin-top: 500px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'western';
-  font-size: 1px;
+  font-size: 25px;
 }
 
 .seta {
@@ -64,7 +64,7 @@ height: 50px;
 
 /* Título interno da placa */
 header h1 {
-  font-size: 15px;
+  font-size: 10px;
   font-family: 'openSans';
   color: #3a220a;
   margin-bottom: 20px;
