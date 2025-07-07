@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'openSans';
+    src: url(font/OpenSans-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'western';
+    src: url(font/WesternBangBangClean-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cinzel', serif;
+  background-image: url('img/background-jurassic-roca.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Cabeçalho fixo */
+.titulo-topo {
+  width: 100%;
+  font-family: 'western';
+  text-align: center;
+  background-color: #3a220a;
+  border-radius: 12px;
+  color: #f8ecc2;
+  padding: 35px;
+  font-size: 55px;
+  top: 0;
+  z-index: 10;
+}
+
+/* Moldura tipo placa */
+.placa {
+  background-color: #f8ecc2;
+  border: 10px solid #4a2f12;
+  border-radius: 30px;
+  padding: 15px;
+  width: 90%;
+  max-width: 400px;
+  margin-top: 150px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'western';
+  font-size: 35px;
+}
+
+.seta {
+width: 50px;
+height: 50px;
+}
+
+/* Título interno da placa */
+header h1 {
+  font-size: 15px;
+  font-family: 'openSans';
+  color: #3a220a;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #d2b48c;
+}
+
+/* Área das imagens */
+.tutorial img {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste para telas menores */
+@media (max-height: 700px) {
+  .placa {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
