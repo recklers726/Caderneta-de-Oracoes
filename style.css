@@ -16,7 +16,7 @@ body {
   font-family: 'Cinzel', serif;
   background-image: url('img/background-jurassic-roca.png');
   background-size: cover;
-  background-position: center;
+  background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -25,11 +25,11 @@ body {
   min-height: 100vh;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   body {
     background-image: url('img/background-jurassic-roca.png'); /* pode ser uma imagem mais simplificada ou com contraste melhor */
     background-size: cover;
-    background-position: center;
+    background-position: right;
   }
 
   .caixa-texto {
