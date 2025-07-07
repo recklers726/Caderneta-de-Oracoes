@@ -94,7 +94,7 @@ header h1 {
 }
 
 /* Ajuste para telas menores */
-@media (max-height: 700px) {
+@media (max-height: 1080px) {
   .placa {
     max-height: 90vh;
     overflow-y: auto;
