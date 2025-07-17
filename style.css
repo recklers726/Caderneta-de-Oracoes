@@ -1,20 +1,20 @@
 @font-face {
-    font-family: 'openSans';
-    src: url(font/OpenSans-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'openSans';
+  src: url(font/OpenSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'western';
-    src: url(font/WesternBangBangClean-Regular.ttf);
+  font-family: 'western';
+  src: url(font/WesternBangBangClean-Regular.ttf);
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
-  background-image: url('img/background-jurassic-roca.png');
+  background-image: url('img/ChatGPT Image 16 de jul. de 2025, 20_03_34.png');
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -27,38 +27,33 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    background-image: url(img/backGroundMobile.png); /* pode ser uma imagem mais simplificada ou com contraste melhor */
-    background-size: cover;
     background-position: center;
-    background-repeat: fixed;
   }
 
   .caixa-texto {
-    backdrop-filter: brightness(1.2); /* ou ajuste o fundo da caixa */
+    backdrop-filter: brightness(1.2);
   }
 }
 
-/* Cabeçalho fixo */
 .titulo-topo {
   width: 100%;
-  font-family: 'western';
+  font-family: 'openSans';
   text-align: center;
   background-color: #3a220a;
   border-radius: 12px;
-  color: #f8ecc2;
+  color: white;
   padding: 35px;
   font-size: 55px;
   top: 0;
   z-index: 10;
 }
 
-/* Moldura tipo placa */
 .placa {
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
   border: 2px solid #4a2f12;
   border-radius: 30px;
   padding: 15px;
-  width: 90%;
+  width: 80%;
   max-width: 18%;
   margin-top: 200px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
@@ -66,34 +61,107 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: 'western';
+  font-family: 'openSans';
+  font-weight: bold;
   font-size: 25px;
 }
 
-.seta {
-width: 50px;
-height: 50px;
-}
-
-/* Título interno da placa */
-header h1 {
-  font-size: 16px;
-  font-family: 'openSans';
-  color: #3a220a;
-  margin-bottom: 20px;
-  text-shadow: 1px 1px #d2b48c;
-}
-
-/* Área das imagens */
-.tutorial img {
-  width: 100%;
-  max-width: 320px;
-  margin-bottom: 15px;
+#textoOculto {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transition: max-height 0.5s ease, padding 0.5s ease;
 }
 
-/* Ajuste para telas menores */
-@media (max-height: 1080px) {
+#textoOculto.ativo {
+  max-height: 1000px;
+  padding: 20px;
+}
 
+#textoOculto2 {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+#textoOculto2.ativo {
+  max-height: 1000px;
+  padding: 20px;
+}
+
+.botao-toggle {
+  background-color: #e94c4c;
+  color: #fff;
+  border: none;
+  margin-top: 23px;
+  padding: 14px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+
+.botao-toggle:hover {
+  background-color: #1a237e;
+}
+
+.botao-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+  background-color: #388e3c;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.botao-download:hover {
+  background-color: #2e7d32;
+}
+
+.seta {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-height: 1080px) {
+  .placa {
+    max-height: 700vh;
+    max-width: 90vh;
+    font-size: 30px;
+    overflow-y: auto;
+    margin-top: 300px;
+  }
+
+  header h1 {
+    font-size: 15px;
+    font-family: 'openSans';
+    color: #3a220a;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #d2b48c;
+  }
 }

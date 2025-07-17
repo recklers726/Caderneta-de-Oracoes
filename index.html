@@ -1,25 +1,54 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caderneta do Terço</title>
-  <link rel="icon" href="img/simbolo-religioso-abstracto-pincelada-preta-de-cruz-crista-com-coroa-de-espinhos-em-fundo-branco-ilustracao-vetorial_118339-6828.avif" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/simbolo-religioso-abstracto-pincelada-preta-de-cruz-crista-com-coroa-de-espinhos-em-fundo-branco-ilustracao-vetorial_118339-6828.avif" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Moldura centralizada tipo placa -->
   <div class="placa">
-    <header>
-      <h1>Num cantim lá no fundão da roça, onde o chão é batido e o sol racha a cabeça, tem um trem forte igual os dinossauro grandão que andava por essas bandas antigamente. É aqui, nesse pedaço de terra, que a gente cultiva não só mio e feijão, mas também uma fé danada de forte. Nossa Caderneta é pra tu aprender a rezar o terço certim. porque o lugar sagrado é aquele onde a gente bota o nosso coraçãozin, igualzin a uma promessa que se guarda no peito. ajuda nois a seguir firme, mesmo quando a vida aperta. porque manter a oração ta mais dificil que domar dinossauro! </h1>
-    </header>
-    <div class="">crica aqui pra abaixar o arquivo </div>
-    <main>
-      <div class="tutorial">  <!-- Adicione mais imagens conforme necessário -->
-      </div>
-      <img class="seta" src="img/download_arrow_icon_143023.webp" alt="Seta">
-    </main>
-        <a href="/img/organized (1).pdf">caderneta.pdf</a>
+    <button onclick="toggleTexto()" class="botao-toggle">
+      Ler sobre Nossa Senhora 👑🙏 
+    </button>
+
+    <div id="textoOculto">
+      <p>
+        Nossa Senhora é mais do que a Mãe de Jesus — é também Mãe espiritual de cada um de nós. Em sua humildade e obediência, ela tornou-se o exemplo perfeito de fé e confiança em Deus. Quando recorremos a ela, não encontramos apenas consolo, mas uma poderosa intercessora junto ao Pai, alguém que conhece nossas dores e as apresenta com amor diante do trono divino.
+      </p>
+      <p>
+        Rezar o terço é um ato de amor e devoção a Maria. Cada Ave-Maria é como uma rosa entregue em suas mãos, e cada mistério contemplado nos aproxima mais da vida de Cristo, vista pelos olhos da Mãe que o gerou, o acompanhou e sofreu ao pé da cruz. Por isso, o terço não é apenas uma repetição de palavras, mas um mergulho profundo no coração da fé cristã.
+      </p>
+
+  <a href="/img/organized (1).pdf" download class="botao-download">
+        <img class="seta" src="img/download_arrow_icon_143023.webp" alt="Seta" />
+        oração do santo terço
+      </a>
+      
+    </div>
+       <button onclick="toggleTexto2()" class="botao-toggle">
+      Nossa Playlist de musicas ✝️
+    </button>
+
+    <div id="textoOculto2">
+      <p>
+          Ouvir música pode ser muito mais do que entretenimento — pode ser um caminho de encontro com Deus. Canções que elevam a alma, inspiradas na fé, ajudam a acalmar o coração e a focar no que realmente importa: o amor divino, a paz interior e a prática das virtudes.
+      </p>
+      <p>
+        Permita-se viver momentos de silêncio, introspecção e louvor através das melodias que falam diretamente à alma. Isso também é uma forma de santificação — oferecer nossos ouvidos, pensamentos e emoções a Deus.   Que tal começar agora? Clique abaixo e ouça uma seleção especial preparada com carinho:
+      </p>
+
+      <a href="https://www.youtube.com/playlist?list=PLRh2Sabeg_KQySBcY8wKH7fCU_s_WAtTp" target="_blank" download class="botao-download">
+  
+        Playlist de musicas
+      </a>
+      
+    </div>
   </div>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>
